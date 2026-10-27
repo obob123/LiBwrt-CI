@@ -132,8 +132,8 @@ function set_kernel_size() {
 #开启内存回收补丁
 function enable_skb_recycler() {
   cat >> $1 <<EOF
-CONFIG_KERNEL_SKB_RECYCLER=y
-CONFIG_KERNEL_SKB_RECYCLER_MULTI_CPU=y
+# CONFIG_KERNEL_SKB_RECYCLER=y
+# CONFIG_KERNEL_SKB_RECYCLER_MULTI_CPU=y
 EOF
 }
 
